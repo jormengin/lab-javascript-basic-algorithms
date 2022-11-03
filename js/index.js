@@ -4,13 +4,22 @@
 
 
 // Iteration 3: Loops
+const hacker1= 'Jorgeeeeeeeee'
+const hacker2= 'Mendez'
 
+const toCapital = function(name) {
+    const toUpper = name.toUpperCase().split('').join(' ')
+    return toUpper
+}
 
+if (toCapital(hacker1).length > toCapital(hacker2).length){
+    console.log('hacker one has the longer name')
+}
 // BONUS EXTRA
 // BONUS 1
 
 //variable declaration
-
+/*
 const par1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum congue imperdiet. Suspendisse sollicitudin dui ligula, cursus aliquam magna faucibus in. Suspendisse vitae ultricies justo, id pellentesque leo. In quis erat id arcu finibus aliquam. Donec varius arcu a nisi commodo, sit amet condimentum dui mattis. Fusce quis mauris elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam molestie ac magna at pharetra. Praesent lacinia purus a justo suscipit, non dictum diam ornare. Curabitur a est vel risus vulputate laoreet.'
 const par2 = 'Cras in egestas neque, vitae consectetur nisi. Nunc sagittis magna at blandit iaculis. Aenean malesuada scelerisque turpis, eu tincidunt ipsum porta ac. Mauris in pharetra ligula. Etiam semper accumsan nisl ut placerat. Nullam sit amet lectus ac nisi pretium egestas. Nulla velit magna, ultrices sit amet venenatis id, finibus vitae ex. Cras ultrices vel turpis at convallis.'
 const par3 = 'Nulla finibus nisl vitae elementum gravida. Nam ut massa efficitur, imperdiet mi eget, imperdiet augue. Praesent ultrices laoreet nisl, ac finibus nisi molestie id. Fusce ultrices ipsum at est rhoncus malesuada. Duis viverra hendrerit mi in sagittis. Vestibulum elit nisl, interdum eget eleifend eu, sodales quis eros. Praesent mollis tempus ante, eget cursus ex aliquam sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean auctor ligula blandit leo tempus congue. Aenean dictum, mauris mattis porttitor consequat, dolor turpis feugiat velit, eget tempor nisl ex vitae lacus.'
@@ -74,3 +83,4 @@ return true
 }
 
 
+*/
