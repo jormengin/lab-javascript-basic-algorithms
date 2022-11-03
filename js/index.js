@@ -72,5 +72,5 @@ const palindrome = function (phrase) {
 }
 return true
 }
-console.log(palindrome(''))
+
 
