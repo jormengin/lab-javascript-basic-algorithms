@@ -1,20 +1,63 @@
 // Iteration 1: Names and Input
-//
+
+const hacker1 ='Jorge'
+const hacker2= 'Tania'
+
+
+
+console.log(`The driver's name is ${hacker1}`);
+console.log(`The navigator's name is ${hacker2}`);
+
 // Iteration 2: Conditionals
+const showLongerName = function(){
+    if (hacker1.length>hacker2.length){
+        console.log(`The driver has the longest name, it has ${hacker1.length} characters`)}
+        else if (hacker1.length<hacker2.length){
+            console.log(`The navigator has the longest name, it has ${hacker2.length} characters`)}
+            else {console.log(`wow you have the same length, ${hacker1.length} characters!`)}
+        }
 
-
+showLongerName()
 // Iteration 3: Loops
-const hacker1= 'Jorgeeeeeeeee'
-const hacker2= 'Mendez'
 
+//3.1 Print capital letters
 const toCapital = function(name) {
-    const toUpper = name.toUpperCase().split('').join(' ');
-    return toUpper;
+    let upperName =''
+    for (i=0;i<name.length;i++){
+upperName += name[i].toUpperCase().trimEnd() + ' ';
+    }
+    return upperName;
+}
+console.log(toCapital('Jorge'));
+// Print reverse
+
+const toReverse = function(name){
+    let reverseName=''
+    for (let i=name.length-1; i>=0; i--){
+    reverseName += name[i];
+    }
+    console.log(reverseName)
+return reverseName
 }
 
-if (toCapital(hacker1).length > toCapital(hacker2).length){
-    console.log('hacker one has the longer name')
-}
+toReverse('Guille') 
+
+
+
+//3.3 Lexicographic order of strings 
+
+const orderStrings = function (name1,name2){
+    if (name1===name2){
+        console.log('wow you got the same name');
+    }
+    if (name1<name2){
+        console.log('driver goes first')
+    } else if (name2<name1){
+        console.log('Navigator def goes first')
+    }
+} 
+
+
 // BONUS EXTRA
 // BONUS 1
 
@@ -33,10 +76,10 @@ console.log(wordCounter(par3))
 
 //function that looks for a word
 
-const wordFinder = function(text){
-    return text.split(' Nam ').length -1;
+const wordFinder = function(text,word){
+    return text.split(word).length -1;
     }
-    console.log(wordFinder(par3))
+    console.log(wordFinder(par3,'Nam'))
 
 
 
@@ -74,7 +117,7 @@ const checkPalin = function (wordToCheck){
 //Method 3 for loop
 const palindrome = function (phrase) {
     const newPhrase = phrase.replace(/[^a-z0-9]/gi, '').toLowerCase().split('');
-    for (var i=0;i<newPhrase.length/2;i++){
+    for (let i=0;i<newPhrase.length/2;i++){
         if (newPhrase[i]!== newPhrase[newPhrase.length-i-1]){ 
             return false;
 }
